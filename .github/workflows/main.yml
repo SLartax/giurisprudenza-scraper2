@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 6 * * *'  # Ogni giorno alle 6 AM UTC
   workflow_dispatch:  # Permette esecuzione manuale
+permissions:
+  contents: write
+
 
 jobs:
   publish:
@@ -30,6 +33,7 @@ jobs:
       - name: Commit and push
         run: |
           git config --local user.email "action@github.com"
+                    git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git config --local user.name "GitHub Action"
           git add data/sentenza_oggi.json
           git commit -m "Update sentenza data - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" --allow-empty
