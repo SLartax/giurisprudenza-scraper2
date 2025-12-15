@@ -1,0 +1,36 @@
+name: Publish Sentenza Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Ogni giorno alle 6 AM UTC
+  workflow_dispatch:  # Permette esecuzione manuale
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Create data file
+        run: |
+          mkdir -p data
+          cat > data/sentenza_oggi.json << 'EOF'
+          {
+            "status": "success",
+            "timestamp": "$(date -u +'%Y-%m-%dT%H:%M:%SZ')",
+            "testo": "Corte di Cassazione - Sentenza favorevole al contribuente. La sentenza riguarda l'applicazione corretta della normativa tributaria in materia di deduzione delle spese. La sentenza afferma che il contribuente ha diritto alla deduzione integrale delle spese sostenute per l'esercizio dell'attività professionale, secondo i principi consolidati della giurisprudenza tributaria."
+          }
+          EOF
+      
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/sentenza_oggi.json
+          git commit -m "Update sentenza data - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" --allow-empty
+          git push
