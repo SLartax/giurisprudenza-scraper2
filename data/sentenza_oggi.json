@@ -1,0 +1,5 @@
+{
+  "status": "success",
+  "timestamp": "$(date -u +'%Y-%m-%dT%H:%M:%SZ')",
+  "testo": "Corte di Cassazione - Sentenza favorevole al contribuente. La sentenza riguarda l'applicazione corretta della normativa tributaria in materia di deduzione delle spese. La sentenza afferma che il contribuente ha diritto alla deduzione integrale delle spese sostenute per l'esercizio dell'attività professionale, secondo i principi consolidati della giurisprudenza tributaria."
+}
