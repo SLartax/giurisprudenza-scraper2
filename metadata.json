@@ -1,0 +1,5 @@
+{
+  "name": "Giurisprudenza AI Assistant",
+  "description": "A legal intelligence dashboard that helps tax professionals analyze Italian jurisprudence. Includes a script generator for data collection and a Gemini-powered analyzer for legal texts.",
+  "requestFramePermissions": []
+}
