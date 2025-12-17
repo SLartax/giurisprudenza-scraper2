@@ -1,20 +1,10 @@
 {
-  "status": "success",
-  "timestamp": "2025-12-16T09:00:00Z",
-  "summary": "La Corte ha accolto l'appello del contribuente affermando il principio di diritto secondo cui l'Amministrazione finanziaria ha l'onere di provare la pretesa impositiva con elementi certi e precisi. In assenza di una motivazione adeguata nell'atto di accertamento riguardo ai presupposti impositivi, l'atto deve essere annullato per violazione del diritto di difesa e del principio di capacità contributiva.",
+  "status": "error",
+  "timestamp": "2025-12-17T10:13:05.198Z",
+  "message": "{\"error\":{\"code\":400,\"message\":\"API key not valid. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API key not valid. Please pass a valid API key.\"}]}}",
+  "summary": "Sentenza favorevole al contribuente sulla deducibilità delle spese",
   "outcome": "FAVOREVOLE",
-  "judge": "Corte di Cassazione - Sezione Tributaria",
-  "caseNumber": "Sentenza n. 2847/2025",
-  "year": "2025",
-  "legalReferences": [
-    "Art. 109 TUIR",
-    "Art. 7 Statuto del Contribuente",
-    "D.Lgs 546/1992"
-  ],
-  "keyPoints": [
-    "Onere della prova a carico dell'Amministrazione finanziaria",
-    "Carenza di motivazione comporta annullamento dell'atto impositivo",
-    "Principio di capacità contributiva come limite sostanziale"
-  ],
-  "rawText": "Corte di Cassazione - Sezione Tributaria\nSentenza n. 2847/2025\nData: 16 Dicembre 2025\n\nRicorrente: Contribuente XYZ\nControparte: Agenzia delle Entrate\n\nFATTISPECIE: Ricorso in Cassazione avverso sentenza della Commissione Tributaria Provinciale, concernente la corretta qualificazione di importi versati dal ricorrente come bonifici in conto corrente aziendale.\n\nDECISIONE: Accoglimento del ricorso. Si annulla la sentenza della Commissione Tributaria Provinciale."
+  "judge": "Corte di Cassazione",
+  "caseNumber": "n.d.",
+  "year": "2025"
 }
