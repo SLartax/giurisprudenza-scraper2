@@ -1,6 +1,6 @@
 {
   "status": "error",
-  "timestamp": "2026-01-03T06:25:29.533Z",
+  "timestamp": "2026-01-04T06:25:52.361Z",
   "message": "{\"error\":{\"code\":400,\"message\":\"API key not valid. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API key not valid. Please pass a valid API key.\"}]}}",
   "summary": "Sentenza favorevole al contribuente sulla deducibilità delle spese",
   "outcome": "FAVOREVOLE",
